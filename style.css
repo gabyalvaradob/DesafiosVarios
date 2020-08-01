@@ -1,0 +1,71 @@
+.container1, .container2, .container3, .container4, .container5{
+  border: 1px solid black;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.flexbox-container1, .flexbox-container2, .flexbox-ppt, .flexbox-botones, .flexbox-bj1, .flexbox-bj2, .flexbox-bj3{
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flexbox-bj1, .flexbox-bj2{
+  background: url(https://cms-assets.tutsplus.com/legacy-premium-tutorials/posts/13756/images/13756_27f44a5f5f1554ad4b102344c9011489.jpg) center;
+  color: white;
+}
+
+.flexbox-bj1 div{
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1; 
+  text-align: center;
+  height: 350px;
+}
+
+.flexbox-bj1 img{
+  width: 25%;
+  padding: 10px;
+}
+
+.flexbox-bj2 button{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flexbox-bj2 div{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flexbox-container1 div {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  align-items: center;
+}
+
+.flexbox-container2 img{
+    box-shadow: 0 10px 50px rgba(0,0,0,0.7);
+    margin: 10px;
+  }
+
+  .botones-gatos {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flexbox-ppt img:hover{
+    box-shadow: 0 10px 50px rgba(37,50,223,0.7);
+  }
+
+  table{
+    padding: 5px;
+    border: 1px solid black;
+  }

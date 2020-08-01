@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafios con JS</title>
+</head>
+
+<body>
+    <div class="container1">
+        <h2>Desafio 1: Tu edad en días</h2>
+
+        <div class="flexbox-container1">
+
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Presioname!</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flexbox-container1">
+            <div id="flexbox-result">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h2>Desafio 2: Generador de gatos</h2>
+        <div class="botones-gatos">
+            <div>
+                <button class="btn btn-success" id="generadorGatos" onclick="generaGato()">Genera un gato</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="borraGatos()">Borrar</button>
+            </div>
+        </div>
+        <div class="flexbox-container2" id="espacio-gato">
+
+        </div>
+    </div>
+    <div class="container3">
+        <h2>Desafio 3: Piedra, papel o tijeras</h2>
+        <div class="flexbox-ppt" id="flexbox-ppt">
+            <img src="static/images/piedra.png" id="piedra" height=150 width=150 onclick="pptJuego(this)">
+            <img src="https://svgsilh.com/svg/147903.svg" id="papel" height=150 width=150 onclick="pptJuego(this)">
+            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/43792/scissors-emoji-clipart-md.png" id="tijera" height=150 width=150 onclick="pptJuego(this)">
+        </div>
+        <!-- <div class="boton-ppt">
+            <div>
+                <button class="btn btn-danger" onclick="reiniciarPPT()">Reiniciar</button>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="container4">
+        <h2 id="cambiar-color-titulo" >Desafio 4: Cambiar el color de los botones</h2>
+        <div class="flexbox-botones">
+            <form action="">
+               <select name="drop" id="selector" onchange="cambioColorBotones(this)">
+                <option value="">Selecciona</option>
+                <option value="random">Random</option>
+                <option value="rojo">Rojo</option>
+                <option value="verde">Verde</option>
+                <option value="reset">Reset</option>
+            </select>
+            </form>
+            <button class="btn btn-primary">Facebook</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Wee!</button>
+            <button class="btn btn-success">Google</button>
+        </div>
+    </div>
+
+    <div class="container5">
+        <h2>Desafio 5: Blackjack</h2>
+        <h3><span id="resultados-blackjack">Juguemos!</span></h3>
+        <div class="flexbox-bj1">
+            <div id="caja-usuario">
+                <h2>Tú: <span id="resultado-usuario">0</span></h2>
+            </div>
+            <div id="caja-dealer">
+                <h2>Dealer: <span id="resultado-dealer">0</span></h2>
+            </div>
+        </div>
+        <div class="flexbox-bj2">
+            <div class="botones-blackjack">
+                <button class="btn-lg btn-primary mr-2" id="bj-pedir-button">Pedir carta</button>
+                <button class="btn-lg btn-warning mr-2" id="bj-plantar-button">Plantarse</button>
+                <button class="btn-lg btn-danger" id="bj-repartir-button">Repartir</button>
+            </div>
+        </div>
+        <div class="flexbox-bj3">
+            <table >
+                <tr>
+                    <th>Ganados</th>
+                    <th>Perdidos</th>
+                    <th>Empates</th>
+                </tr>
+                <tr>
+                    <td><span id="ganadas">0</span></td>
+                    <td><span id="perdidas">0</span></td>
+                    <td><span id="empates">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
